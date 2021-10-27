@@ -1,0 +1,27 @@
+.nav-banner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    position: fixed;
+    width: 500;
+    background-color:white
+    
+}
+
+.nav-wrapper {
+    margin-top: 20px;
+
+    a {
+        margin: 60px;
+    }
+
+    a.active {
+        text-decoration:underline;
+    }
+}
+
+.border-bottom {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #e8e9eb;
+}
