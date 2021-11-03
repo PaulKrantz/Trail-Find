@@ -4,12 +4,14 @@
         justify-content: space-between;
 
         a {
+            margin: 15px;
             border: 2px;
-            border-radius: 5px;
-            padding: 10px;
+            border-radius: 0px;
+            padding: 30px;
             width: 135px;
             text-align: center;
-            background-color:darkolivegreen;
+            border: 1px solid black;
+            background-color:lightsteelblue;
         }
     }
 }

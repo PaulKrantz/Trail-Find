@@ -18,7 +18,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:white
+    background-color:white;
 }
 
 .loading, .error {
@@ -27,5 +27,5 @@ a {
 }
 
 .error {
-    color: red;
+    color:black;
 }

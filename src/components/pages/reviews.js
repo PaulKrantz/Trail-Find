@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 
 export default class Reviews extends Component {
     constructor(props) {
@@ -11,8 +11,13 @@ export default class Reviews extends Component {
             error: false
         }
 
-        this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
+        
+    }
+
+    handleChange(event) {
+        this.setState({ [event.target.name]: event.target.value })
     }
 
     handleSubmit(event) {
@@ -28,17 +33,18 @@ export default class Reviews extends Component {
             headers: { "content-type": "application/json" },
             body: JSON.stringify({
                 name: this.state.nameInput,
-                price: parseFloat(this.state.priceInput)
+                reviews: parseFloat(this.state.reviewInput)
             })
         })
         .then(response => response.json())
         .then(data => {
             if (data.id) {
-                this.props.history.push("/items")
+                this.props.history.push("/reviews")
             }
         })
         .catch(error => {
-            console.log("Error adding review ", error)
+           // console.log("Error adding review ", error)
+           console.log('Test from handle submit');
 
             this.setState({
                 loading: false,

@@ -14,10 +14,10 @@ export default class App extends Component {
       <div className='app'>
         <Nav />
         <Switch>
-          <Route exact path="/" Component={Home} />
-          <Route exact path="/home" Component={Home} />
-          <Route exact path="/parks" Component={Parks} />
-          <Route exact path="/reviews" Component={Reviews} />
+          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/parks" component={Parks} />
+          <Route path="/reviews" component={Reviews} />
           <Route component={NoMatch} />
         </Switch>
       </div>
