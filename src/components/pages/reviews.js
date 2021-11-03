@@ -28,7 +28,7 @@ export default class Reviews extends Component {
             error: false
         })
 
-        fetch("https://trail-find.herokuapp.com/reviews/add", {
+        fetch("https://trail-find-api.herokuapp.com/reviews/add", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({
